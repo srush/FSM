@@ -17,6 +17,7 @@ flag testing
 
 library
     exposed-modules:     NLP.FSM
+                         NLP.FSM.Simple
     other-modules:  
     if flag(testing)
         buildable: False
@@ -24,6 +25,7 @@ library
     build-Depends:   base       >= 3   && < 4,
                      containers >= 0.1 && < 0.3,
                      monoids    >= 0.2.0.2 && < 0.3,
+                     fgl,
                      semiring
 
 executable hsfsm
